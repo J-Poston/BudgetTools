@@ -1,0 +1,33 @@
+
+<form class="form" [formGroup]="futureValueForm">
+
+    <div class="form-grp">
+        <label for="pmt">Payment:</label>
+        <input class="form-ctrl" type="number" id="pmt" formControlName="pmt">
+    </div>
+
+    <div class="form-grp">
+        <label for="rate">Rate:</label>
+        <input class="form-ctrl" type="number" id="rate" formControlName="rate">
+    </div>
+
+    <div class="form-grp">
+        <label for="periods">Periods:</label>
+        <input class="form-ctrl" type="number" id="periods" formControlName="periods">
+    </div>
+
+    <div class="form-grp">
+        <label for="pv">Present Value:</label>
+        <input class="form-ctrl" type="number" id="pv" formControlName="presentValue">
+    </div>
+
+
+    <div class="result-container" id="result-box">
+        <p class="result-label">Your Total Estimate</p>
+    <div class="result-number-badge" id="calc-output">
+        {{futureValue() }}
+    </div>
+  </div>
+</form>
+
+
