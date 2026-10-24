@@ -71,3 +71,11 @@
   border-radius: 9999px; /* Pill shape */
   border: 1px solid #bfdbfe;
 }
+
+span.help-text{
+    font-style: italic;
+}
+
+.explainer{
+    text-align: center;
+}

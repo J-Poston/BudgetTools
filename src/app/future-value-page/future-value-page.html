@@ -1,17 +1,36 @@
 
+
+<div class="explainer">
+    <p>Use this page to deterimine the future value of a recurring investment over a given number of periods.</p>
+</div>
+
 <form class="form" [formGroup]="futureValueForm">
 
     <div class="form-grp">
-        <label for="pmt">Payment:</label>
+        <span class="help-text">Amount deposited every period.</span>
+        <label for="pmt">Deposit Amt:</label>
         <input class="form-ctrl" type="number" id="pmt" formControlName="pmt">
     </div>
 
+    <!--
     <div class="form-grp">
+        <span></span>
+        <label for="frequency">Every: </label>
+        <select class="form-ctrl" name="frequency" id="frequency">
+            <option value="y">Year</option>
+            <option value="q">Quarter</option>
+            <option value="m">Month</option>
+        </select>
+    </div>
+-->
+    <div class="form-grp">
+        <span class="help-text">Ex. 3% (0.03) APY / 12 months = 0.0025</span>
         <label for="rate">Rate:</label>
         <input class="form-ctrl" type="number" id="rate" formControlName="rate">
     </div>
 
     <div class="form-grp">
+        <span class="help-text">Ex. Deposit every month over 5 years is 60 periods.</span>
         <label for="periods">Periods:</label>
         <input class="form-ctrl" type="number" id="periods" formControlName="periods">
     </div>
